@@ -6,6 +6,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#score-board {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #game-area {
@@ -18,4 +31,14 @@ body {
     position: absolute;
     border-radius: 50%;
     cursor: pointer;
+    animation: moveUp 5s linear forwards;
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(-100px);
+    }
 }
