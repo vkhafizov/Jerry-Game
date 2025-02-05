@@ -5,7 +5,7 @@ let score = 0;
 function createCircle() {
     const circle = document.createElement('div');
     circle.classList.add('circle');
-    const size = Math.floor(Math.random() * 100) + 50;
+    const size = Math.floor(Math.random() * 100) + 100;
     const x = Math.random() * (window.innerWidth - size);
     const color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
 
@@ -30,7 +30,7 @@ function createCircle() {
 }
 
 function startGame() {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 5; i++) {
         createCircle();
     }
 }
