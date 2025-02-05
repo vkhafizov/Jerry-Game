@@ -2,10 +2,19 @@ const gameArea = document.getElementById('game-area');
 const scoreBoard = document.getElementById('score-board');
 let score = 0;
 
+function delayOneSecond() {
+  setTimeout(() => {
+    // Действие, которое нужно выполнить через 1 секунду
+  }, 1000);
+}
+
+
+
 function createCircle() {
+delayOneSecond();
     const circle = document.createElement('div');
     circle.classList.add('circle');
-    const size = Math.floor(Math.random() * 100) + 100;
+    const size = Math.floor(Math.random() * 50) + 100;
     const x = Math.random() * (window.innerWidth - size);
     const color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
 
