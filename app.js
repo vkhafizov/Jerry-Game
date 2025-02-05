@@ -2,16 +2,11 @@ const gameArea = document.getElementById('game-area');
 const scoreBoard = document.getElementById('score-board');
 let score = 0;
 
-function delayOneSecond() {
-  setTimeout(() => {
-    // Действие, которое нужно выполнить через 1 секунду
-  }, 1000);
-}
 
 
 
 function createCircle() {
-delayOneSecond();
+setTimeout(() => {}, 1000);
     const circle = document.createElement('div');
     circle.classList.add('circle');
     const size = Math.floor(Math.random() * 50) + 100;
