@@ -6,12 +6,21 @@ let score = 0;
 
 
 function createCircle() {
-setTimeout(() => {}, 1000);
+  setTimeout(() => {
     const circle = document.createElement('div');
     circle.classList.add('circle');
     const size = Math.floor(Math.random() * 50) + 100;
     const x = Math.random() * (window.innerWidth - size);
     const color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+    
+    circle.style.width = `${size}px`;
+    circle.style.height = `${size}px`;
+    circle.style.left = `${x}px`;
+    circle.style.backgroundColor = color;
+    
+    document.body.appendChild(circle);
+  }, 1000);
+}
 
     circle.style.width = `${size}px`;
     circle.style.height = `${size}px`;
