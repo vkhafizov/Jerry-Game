@@ -38,8 +38,8 @@ function createCircle() {
 }
 
 function startGame() {
-    for (let i = 0; i < 2; i++) {
-        createCircle();
+    for (let i = 0; i < 5; i++) {
+        setTimeout(createCircle, 1000);
     }
 }
 
